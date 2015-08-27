@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		840C090E1B7B7EC300F79D33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C090D1B7B7EC300F79D33 /* AppDelegate.swift */; };
 		840C09111B7B7EC300F79D33 /* myList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 840C090F1B7B7EC300F79D33 /* myList.xcdatamodeld */; };
-		840C09131B7B7EC300F79D33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C09121B7B7EC300F79D33 /* ViewController.swift */; };
 		840C09161B7B7EC300F79D33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840C09141B7B7EC300F79D33 /* Main.storyboard */; };
 		840C09181B7B7EC300F79D33 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840C09171B7B7EC300F79D33 /* Images.xcassets */; };
 		840C091B1B7B7EC300F79D33 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840C09191B7B7EC300F79D33 /* LaunchScreen.xib */; };
 		840C09271B7B7EC300F79D33 /* myListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C09261B7B7EC300F79D33 /* myListTests.swift */; };
+		840C09311B7B847600F79D33 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C09301B7B847600F79D33 /* List.swift */; };
+		840C09331B7B85AF00F79D33 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C09321B7B85AF00F79D33 /* ListTableViewController.swift */; };
+		840C09351B7B860D00F79D33 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840C09341B7B860D00F79D33 /* ItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,15 @@
 		840C090C1B7B7EC300F79D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840C090D1B7B7EC300F79D33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840C09101B7B7EC300F79D33 /* myList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = myList.xcdatamodel; sourceTree = "<group>"; };
-		840C09121B7B7EC300F79D33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		840C09151B7B7EC300F79D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840C09171B7B7EC300F79D33 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		840C091A1B7B7EC300F79D33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		840C09201B7B7EC300F79D33 /* myListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840C09251B7B7EC300F79D33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840C09261B7B7EC300F79D33 /* myListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myListTests.swift; sourceTree = "<group>"; };
+		840C09301B7B847600F79D33 /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = List.swift; path = ../List.swift; sourceTree = "<group>"; };
+		840C09321B7B85AF00F79D33 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		840C09341B7B860D00F79D33 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +84,13 @@
 			isa = PBXGroup;
 			children = (
 				840C090D1B7B7EC300F79D33 /* AppDelegate.swift */,
-				840C09121B7B7EC300F79D33 /* ViewController.swift */,
 				840C09141B7B7EC300F79D33 /* Main.storyboard */,
+				840C09341B7B860D00F79D33 /* ItemViewController.swift */,
+				840C09321B7B85AF00F79D33 /* ListTableViewController.swift */,
 				840C09171B7B7EC300F79D33 /* Images.xcassets */,
 				840C09191B7B7EC300F79D33 /* LaunchScreen.xib */,
 				840C090F1B7B7EC300F79D33 /* myList.xcdatamodeld */,
+				840C09301B7B847600F79D33 /* List.swift */,
 				840C090B1B7B7EC300F79D33 /* Supporting Files */,
 			);
 			path = myList;
@@ -215,9 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840C09131B7B7EC300F79D33 /* ViewController.swift in Sources */,
+				840C09311B7B847600F79D33 /* List.swift in Sources */,
 				840C090E1B7B7EC300F79D33 /* AppDelegate.swift in Sources */,
+				840C09351B7B860D00F79D33 /* ItemViewController.swift in Sources */,
 				840C09111B7B7EC300F79D33 /* myList.xcdatamodeld in Sources */,
+				840C09331B7B85AF00F79D33 /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
